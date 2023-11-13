@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(to right, #77778a, transparent 2%, transparent 98%, #1a1a22),
+                radial-gradient(farthest-corner at 100% 30%, #447 0%, #000 100%);
+    color: #fe0;
+    width: 305px;
+    font: 10pt Verdana;
+    margin: 0;
+    user-select: none;
+}
+
+legend {
+    color: #6ee;
+}
+
+button {
+    width: 80px;
+    margin-bottom: 7px;
+}
+
+input, select, span {
+    margin: 0 6px 7px 0;
+}
+
+select {
+    height: 21px;
+}
+
+input[type=checkbox] {
+    vertical-align: -2px;
+    cursor: pointer;
+}
+
+a {
+    color: #fd4;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    background: rgba(127, 127, 127, .5);
+    padding: 0;
+    text-align: center;
+    color: #eee;
+    font-weight: bold;
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.field {
+    width: 140px;
+}
+
+.pl_field {
+    width: 182px;
+}
+
+.small {
+    width: 30px;
+}
+
+.title {
+    color: #ccc;
+}
+
+.err {
+    color: #f66;
+}
+
+.work {
+    color: #4f4;
+}
+
+.special {
+    width: calc(100% - 15px);
+    border: 1px dashed #488;
+    padding: 6px 6px 0 6px;
+    margin-bottom: 10px;
+}
+
+.invis {
+    display: none;
+}
+
+.disabled {
+    color: #777
+}
+
+/*Кнопка помощи*/
+.help_btn {
+    position: absolute;
+    border-radius: 8px;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    top: 20px;
+    right: 10px;
+    background: #266;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.help_btn:hover {
+    background: #488; 
+}
+
+#main {
+    padding: 10px 10px 0 10px;
+}
+
+/*Страница помощи*/
+#help {
+    display: none;
+    color: #eee;
+    margin: 20px;
+    height: 300px;
+}
+
+/*Панель ключа*/
+#keyblock {   
+    text-align: center;
+    height: 100px;
+}
+#key {
+    background: rgba(255,255,255,.2);
+    border: 1px solid #aaa;
+    color: #fff;
+}

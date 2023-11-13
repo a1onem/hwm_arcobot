@@ -1,0 +1,72 @@
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css" />
+
+<body>
+    <div id="logo" class="logo">HWM ArcoBot</div>
+    <div class="help_btn" id="btn_help" title="Помощь">?</div>
+
+    <fieldset id="main">
+
+        <input id="active" type="checkbox">Включить бота в игре<br>
+        <span class="title">Колода</span><select id="ktype">
+            <option value=1>Одна</option>
+            <option value=2>Бесконечная</option>
+        </select>
+        <span class="title">Ставка</span><select disabled data-ext id="bet">
+            <option value=-1>Мин.</option>
+        </select>
+        <br>
+
+        <input id="autocreate" type="checkbox">Создавать заявку и начинать игру<br>
+        <input id="goldcard" type="checkbox">Докупать золотые карты<br>
+        <input id="return" type="checkbox">Переходить в Таверну после игры<br>
+        <input id="info" type="checkbox">Показывать условия в секторах<br>
+        <input id="stats" type="checkbox">Показывать статистику игроков
+
+        <fieldset data-ext disabled class="special">
+            <legend>Поиск заявок (приоритет)</legend>
+            <input id="cbx_joingame" type="checkbox">Вступать в заявку к игроку<br>
+            <select id="pList" class="pl_field">
+                <option selected disabled>Список игроков</option>
+            </select><button id="delPlayer">Удалить</button><br>
+            <input class="pl_field" id="inputName" type="text" placeholder="Введите имя игрока" maxlength="18"><button
+                id="addPlayer">Добавить</button>
+        </fieldset>
+
+        <fieldset data-ext disabled class="special">
+            <legend>Настройки ИИ</legend>
+            <span class="title">Критическая точка врага</span><select id="critPoint">
+                <option value="auto">Авто</option>
+                <option value="manual">Вручную</option>
+            </select>
+            <fieldset id="enemyCritParams" disabled>
+                <span class="disabled">Башня</span><input id="towerSize" type="text" maxlength="3" class="small"><span
+                    class="disabled">Мана</span><input id="manaVal" type="text" maxlength="3" class="small"><span
+                    class="disabled">Руда</span><input id="oreVal" type="text" maxlength="3" class="small"><br><button
+                    style="width:100%" id="saveParams">Применить</button>
+            </fieldset>
+        </fieldset>
+
+    </fieldset>
+
+    <div id="help">
+        <p><a target=_blank href="https://sites.google.com/view/hwmtool/arcobot">Подробно о расширении</a></p>
+        <p><a target=_blank href="https://sites.google.com/view/hwmtool/arcobot/arcobot_changelog">История
+                обновлений</a>
+        </p>
+        <p><a target=_blank href="https://groups.google.com/g/hwmtool">Форум</a></p>
+        <p><a target=_blank href="https://www.youtube.com/@hwmtool">Канал на Youtube</a></p><br>
+        <p align=center>A1oneM"s ArcoBot <span style="color:springgreen">[2018-2023]</span></p>
+        <div id="keyblock">
+            <div class="title">Ключ активации:</div>
+            <input id="key" class="field" type="text"><button id="sendkey" style="width:auto">Применить</button>
+            <div id="keyerror" class="err"></div>
+        </div>
+        <div class="help_btn" id="btn_back" title="Закрыть">X</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
